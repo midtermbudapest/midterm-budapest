@@ -1,0 +1,55 @@
+.map-container {
+    height: 500px;
+    width: 100%;
+    margin: 70px auto 0 auto;
+    border-color: #bfa888;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    float: left;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+}
+.leaflet-control-attribution.leaflet-control > a:first-child {
+    display: none;
+}
+
+.banner-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.banner {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner button {
+    margin: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2em 1em;
+    min-width: 300px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bolder;
+    transition: all .2s ease-in;
+    border: 1px solid transparent;
+}
+
+.banner button:hover, .banner button:active {
+    background-color: #ddd;
+    color: black;
+    border: 1px solid black;
+    padding: 2em 1em;
+}

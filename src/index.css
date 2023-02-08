@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.commento-logo-container {
+    display: none;
+}
+
+body {
+    color: #5d6475;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+strong {
+    font-weight: 500;
+
+}
+h1 {
+    z-index: 2;
+    color: #BFA888;
+    font-size: 39px;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2em;
+    padding: 10px 0 12px 0;
+}
+h6 {
+    font-weight: bold;
+}
+
+a {
+  color: inherit;
+    text-decoration: underline;
+}
+
+.ScrollUpButton__Container {
+    right: 15px !important;
+    bottom: 130px !important;
+    width: 3em !important;
+    height: 3em !important;
+    transition: all 1.2s ease-out;
+    opacity: .3 !important;
+    z-index: 1001;
+    background-color: black !important;
+}
+
+.ScrollUpButton__Container:hover {
+    opacity: 1 !important;
+}
+
+.ScrollUpButton__Container > svg {
+    fill: white;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    z-index: 3001 !important;
+    width: 36px;
+    height: 30px;
+    left: 16px;
+    top: 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    transition: all .2s ease-out;
+    background: #f8f8f8;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #b6a0a0;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #373a47;
+    font-size: 1.15em;
+    overflow-y: hidden !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    margin-top: 90px;
+}
+
+/* Individual item */
+.bm-item {
+    padding-left: 12px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    line-height: 2em;
+    font-weight: bold;
+    transition: all .2s ease;
+}
+
+.bm-item:hover, .bm-item:active {
+    background-color: #777;
+    text-decoration: underline;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.container-sm {
+    max-width: 1260px;
+    margin: auto;
+    padding: 30px 0;
+}

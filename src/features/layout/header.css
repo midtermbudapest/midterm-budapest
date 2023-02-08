@@ -1,0 +1,56 @@
+.header {
+    background-color: #fff;
+    z-index: 130;
+    z-index: 1003;
+    position: fixed;
+    border-style: solid;
+    width: 100%;
+    max-width: 100%;
+}
+
+.mobile_header {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    background-color: #282D33;
+    height: 70px;
+    width: 100%;
+    top: 0px;
+    z-index: 9999;
+    text-align: center;
+}
+
+.logo {
+    color: white;
+    border: white 1px solid;
+    font-size: 1.3em;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+    letter-spacing: .1em;
+    position: relative;
+}
+
+.logo > span {
+    font-family: 'Alata', sans-serif;
+    font-weight: lighter;
+}
+
+.logo .delimiter {
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.logo .suffix {
+    position: absolute;
+    right: -60px;
+    bottom: -15px;
+    transform: rotate(-10deg);
+    background: white;
+    color: black;
+    font-size: .8em;
+    padding: 0.2em .3em;
+}

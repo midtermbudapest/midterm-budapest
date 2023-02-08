@@ -1,0 +1,110 @@
+// The color palette
+$palette: (
+        light: (
+                1: #151719,
+                2: #25282C,
+                3: #33363A
+        ),
+        dark: (
+                1: #ECEDED,
+                2: #9CA9B3,
+                3: #717D86,
+                4: #282828,
+        ),
+        primary: (
+                1: #00827a,
+                2: #00ccBE,
+                3: #00524C,
+                4: #C2FFFB
+        ),
+        secondary: (
+                1: #6163FF,
+                2: #ACADFF,
+                3: #5658DD,
+                4: #E9E9FF
+        ),
+        alert: (
+                error: #FF6171,
+                warning: #FFA173,
+                success: #24E5AF
+        )
+);
+@function get-color($elem, $variant) {
+    @return map-get(map-get($palette, $elem), $variant);
+}
+// Borders and dividers: color
+$border--color: (
+        divider:			get-color(dark, 2),
+        divider-inverse:	get-color(light, 1)
+);
+
+
+@function color-border($elem) {
+    @return map-get($border--color, $elem);
+}
+@mixin divider-mix($layout: false) {
+    display: block;
+    height: 1px;
+    @if ( $layout == 'inverse' ) {
+        background: color-border(divider-inverse);
+    } @else {
+        background: color-border(divider);
+    }
+}
+
+@mixin divider($type: false, $layout: false) {
+    @if ( $type == 'before' ) {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            @include divider-mix($layout);
+        }
+    } @else if ($type == 'after') {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            @include divider-mix($layout);
+        }
+    } @else {
+        @include divider-mix($layout);
+    }
+}
+// Dividers
+.has-top-divider {
+    @include divider(before);
+}
+
+.has-bottom-divider {
+    @include divider(after);
+}
+// For centering content
+.center-content {
+    text-align: center;
+}
+
+.privacy-policy {
+    text-align: left;
+}
+
+.privacy-policy h6 {
+    margin: 10px 0;
+}
+
+.imprint-address{
+    text-align: left;
+    margin: 100px 0 60px 0;
+}
+
+.Privacy-content {
+    padding: 0 10px;
+}

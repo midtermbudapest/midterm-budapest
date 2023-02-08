@@ -1,0 +1,10 @@
+.RH5hzf.RLS9Fe {
+    display: none !important;
+}
+
+iframe {
+    width: 100%;
+    position: absolute;
+    height: calc(100% - 70px);
+    bottom: 0;
+}
