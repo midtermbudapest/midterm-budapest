@@ -8,6 +8,7 @@ import ScrollToTop from './features/layout/ScrollToTop';
 import { createBrowserHistory } from 'history'
 import { push as Menu } from 'react-burger-menu'
 import { useCallback, useState } from 'react';
+import { usePageTracking } from './libs/ga/usePageTracking';
 
 const history = createBrowserHistory();
 
@@ -24,6 +25,9 @@ function App() {
   const handleStateChange = useCallback(({ isOpen }) => {
     setIsOpenMenu(isOpen)
   }, [])
+
+  usePageTracking();
+
   return (
     <div className="App">
       <div id="outer-container">

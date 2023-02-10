@@ -10,6 +10,7 @@ export const Map = () => {
     anchor.scrollIntoView({
       behavior: 'smooth',
     });
+    window.gtag('event', 'cta_click_reviews');
   }, [])
   return (
     <div className="map-container">

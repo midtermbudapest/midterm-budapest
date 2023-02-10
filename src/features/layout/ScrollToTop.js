@@ -31,7 +31,7 @@ function ScrollToTop({ history }) {
     }
   }, [history]);
 
-  return (null);
+  return null;
 }
 
 export default withRouter(ScrollToTop);
